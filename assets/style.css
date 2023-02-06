@@ -1,0 +1,19 @@
+/*This is placeholder for the css*/
+
+.nav-container {
+    border: solid 1px;
+}
+
+.list-align {
+    float: right;
+}
+
+.pure-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.display-border {
+    padding: 10px 5px 10px 5px;
+    border: solid 1px;
+}
