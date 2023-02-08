@@ -16,7 +16,7 @@ var subButton = function(event) {
 }
 
 function displayInfo(search) {
-    var drinksUrl = "https://api.edamam.com/api/recipes/v2?type=any&q=" + search + "&app_id=a29e6f3f&app_key=7047bda6c7dbcd72b85643ed79100572";
+    var drinksUrl = "https://api.edamam.com/api/recipes/v2?type=any&q=" + search + "&app_id=a29e6f3f&app_key=7047bda6c7dbcd72b85643ed79100572&dishType=Drinks";
 
     console.log(drinksUrl);
     fetch(drinksUrl) 
