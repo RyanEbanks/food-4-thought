@@ -16,7 +16,7 @@ var subButton = function(event) {
 }
 
 function displayInfo(search) {
-    var url = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Desserts"
+    var url = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Desserts&dishType=Sweets"
     console.log(url);
     fetch(url) 
     .then(function(response){
@@ -43,7 +43,6 @@ function displayTxt(txt) {
         <img src= "${txt[i].recipe.image}">
         <p>${txt[i].recipe.ingredientLines}</p>
         <p>${txt[i].recipe.label}</p>
-        <p>${txt[i].recipe.mealType}</p>
         <p>${txt[i].recipe.source}</p>
         
     `
