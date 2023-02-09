@@ -3,6 +3,7 @@ var infoEL = document.querySelector ("#info");
 var showtextEL =document.querySelector (".show");
 var showinfoEL = document.querySelector (".show-info");
 
+
 var subButton = function(event) {
     event.preventDefault();
 
@@ -39,42 +40,38 @@ function displayInfo(search) {
 
 //Function to loop through the recipe array and display the individual stuff
 function displayTxt(txt) {
-    var html = "";
+    var foodContainerHtml = "";
+//You could add a line of code here to store calories and make it a whole number then represent it below
  for(var i = 0; i < txt.length; i++) {
-    html += `
-    <div class="food-container">
+    foodContainerHtml += `
+    <div class="food-container food-${i}">
     <img src= "${txt[i].recipe.image}">
     <p>${txt[i].recipe.label}</p>
     <p>Description<p>
     <p>Description Text<p>
-        <div class="food-side-information">
-        <p>Meal Type: ${txt[i].recipe.mealType}</p>
-        <p>Calories: ${txt[i].recipe.calories}Kcal</p>
-        </div>
-    </div> 
-    <div id="ingredients-and-steps">
-    <p>Ingredients:<p>
-    </div>
+    <p>Calories: ${txt[i].recipe.calories} Kcal</p>
     `
-//Referencing the index of the ingredients themself
-    for(var j = 0; j < txt[i].recipe.ingredientLines.length; j++) {
-        html += `
-        <div id="ingredients-and-steps">
-        <ul>
-        <li>${txt[i].recipe.ingredientLines[j]}</li>
-        </ul> 
-        </div>       
-        `
-    }
+    foodContainerHtml +=`
+    <div class="ingredients-and-steps">
+    <p class="center-text">Ingredients:<p>
+    <ul>
+    `
 
-    html += `
-    <div id="ingredients-and-steps">
-    <p>${txt[i].recipe.source}</p>
+    //Referencing the index of the ingredients themself
+        for(var j = 0; j < txt[i].recipe.ingredientLines.length; j++) {
+            foodContainerHtml += `
+            <li>${txt[i].recipe.ingredientLines[j]}</li>    
+            `
+        }
+    
+    foodContainerHtml += `
+    </ul> 
+    </div>
     </div>
     `
     //Might need url from recipe's cuz that gives a link to the recipe
-    console.log(html);
-    console.log(txt[0].recipe.ingredientLines.values());
+    console.log(foodContainerHtml);
+    var html = foodContainerHtml;
     showinfoEL.innerHTML = html;
  }
 }

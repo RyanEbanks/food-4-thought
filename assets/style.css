@@ -17,3 +17,62 @@
     padding: 10px 5px 10px 5px;
     border: solid 1px;
 }
+
+.show-info {
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 20% auto 20% auto;
+   padding: 2px 0 2px 0;
+}
+
+.food-container{
+    border-radius: 15px;
+    padding-right: 2px;
+    background-color: #EFBE7D;
+    border-color: #EFBE7D;
+    text-align: center;
+    margin: 10% auto 10% auto;
+    width: 40%;
+    padding: 0;
+    box-shadow: 0 14px 25px #0e243126;
+    position: relative;
+    height: 800px;
+}  
+
+.food-container img{
+    /* Moving the position of the image upwards */
+    position: relative;
+    bottom: 100px;
+    border-radius: 50%;
+    border: solid 8px #ffff;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+.ingredients-and-steps {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px 2px 0 2px;
+    background-color: #FFD59E;
+    border-color: #FFD59E;
+    height: 45%;
+    overflow: auto;
+    /*Setting the second div to sit at the bottom of the containing div*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    height: 40%;
+    margin-right: auto;
+    text-align: left;
+} 
+
+.center-text {
+    text-align: center;
+}
