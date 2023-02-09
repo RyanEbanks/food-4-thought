@@ -41,7 +41,7 @@ function displayInfo(search) {
 //Function to loop through the recipe array and display the individual stuff
 function displayTxt(txt) {
     var foodContainerHtml = "";
-
+//You could add a line of code here to store calories and make it a whole number then represent it below
  for(var i = 0; i < txt.length; i++) {
     foodContainerHtml += `
     <div class="food-container food-${i}">
@@ -50,33 +50,29 @@ function displayTxt(txt) {
     <p>Description<p>
     <p>Description Text<p>
     <p>Calories: ${txt[i].recipe.calories} Kcal</p>
-    </div>
     `
     foodContainerHtml +=`
-    <p>Ingredients:<p>
+    <div class="ingredients-and-steps">
+    <p class="center-text">Ingredients:<p>
+    <ul>
     `
 
     //Referencing the index of the ingredients themself
         for(var j = 0; j < txt[i].recipe.ingredientLines.length; j++) {
             foodContainerHtml += `
-            <div class="ingredients-and-steps">
-            <ul>
-            <li>${txt[i].recipe.ingredientLines[j]}</li>
-            </ul>
-            </div>      
+            <li>${txt[i].recipe.ingredientLines[j]}</li>    
             `
         }
     
-
     foodContainerHtml += `
-    <p>${txt[i].recipe.source}</p>
+    </ul> 
+    </div>
+    </div>
     `
     //Might need url from recipe's cuz that gives a link to the recipe
     console.log(foodContainerHtml);
-    // console.log(ingredientsHtml);
     var html = foodContainerHtml;
     showinfoEL.innerHTML = html;
-    
  }
 }
 

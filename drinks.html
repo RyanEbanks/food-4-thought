@@ -9,13 +9,14 @@
     integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <!--The viewport tag allows for responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--API logo-->
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    <!--Links to-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Food-4-Thought</title>
 </head>
 <body>
-    <!--The following HTML is solely prepared to allow the group to work on api calls while
-    the others work on the styling of the page-->
-
     <!--Sample Navbar-->
     <div class="pure-menu pure-menu-horizontal nav-container">
         <a href="#" class="pure-menu-heading pure-menu-link">Logo</a>
@@ -39,9 +40,9 @@
 
     <!--Sample form-->
     <form class="pure-form">
+        <label class="center-text">Search</label>
         <fieldset>
-            <legend>Sample Search Field</legend>
-            <input id ="info" type="search" placeholder="search" />
+            <input id ="info" class="material-icons" type="search" placeholder="search" />
             <button type="submit" class="pure-button pure-button-primary">Enter</button>
         </fieldset>
     </form>
@@ -56,7 +57,13 @@
        
 
     </div>
-    
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <p class="grey-text text-lighten-4"><span id="edamam-badge" data-color="transparent"></span></p>
+            </div>
+      </footer>
     <script src="./assets/drinks.js"></script>
 </body>
 </html>
