@@ -36,47 +36,39 @@ function displayInfo(search) {
     });
 }
 
-
 function displayTxt(txt) {
-    var html = "";
- for(var i = 0; i < txt.length; i++) {
-    html += `
-    <div class="food-container">
-    <img src= "${txt[i].recipe.image}">
-    <p>${txt[i].recipe.label}</p>
-    <p>Description<p>
-    <p>Description Text<p>
-        <div class="food-side-information">
-        <p>Calories: ${txt[i].recipe.calories}Kcal</p>
-        </div>
-    </div> 
-    <div id="ingredients-and-steps">
-    <p>Ingredients:<p>
-    </div>
-    `
-    
-    
-    
-    for(var j = 0; j < txt[i].recipe.ingredientLines.length; j++) {
-        html += `
-        <div id="ingredients-and-steps">
-        <ul>
-        <li>${txt[i].recipe.ingredientLines[j]}</li>
-        </ul> 
-        </div>       
-        `
-    }
-
-    
-    html += `
-    <div id="ingredients-and-steps">
-    <p>${txt[i].recipe.source}</p>
-    </div>
-    `
-
-    console.log(html);
-    console.log(txt[0].recipe.ingredientLines.values());
-    showinfoEL.innerHTML = html;
+    var foodContainerHtml = "";
+    for(var i = 0; i < txt.length; i++) {
+       foodContainerHtml += `
+       <div class="food-container food-${i}">
+       <img src= "${txt[i].recipe.image}">
+       <p>${txt[i].recipe.label}</p>
+       <p>Description<p>
+       <p>Description Text<p>
+       <p>Calories: ${txt[i].recipe.calories}Kcal</p>
+       `
+       foodContainerHtml +=` 
+       <div class="ingredients-and-steps">
+       <p class="center-text">Ingredients:<p>
+       <ul>
+       `
+       
+       for(var j = 0; j < txt[i].recipe.ingredientLines.length; j++) {
+           foodContainerHtml += `
+           <li>${txt[i].recipe.ingredientLines[j]}</li>      
+           `
+       }
+   
+       
+       foodContainerHtml += `
+       </ul>
+       </div>
+       </div>
+       `
+   
+       console.log(foodContainerHtml);
+       var html = foodContainerHtml;
+       showinfoEL.innerHTML = html; 
  }
 }
 
