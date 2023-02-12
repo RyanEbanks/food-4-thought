@@ -9,12 +9,23 @@ h1 {
     justify-content: space-between;
 }
 
-
-.lower-pics {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.test{
+    border-color: black;
+    border-style: solid;
+    border-width: 15px;
+    border-style: ridge;
 }
+
+
+.pics{
+    display: flex;
+    flex-direction: row;
+    width:  100px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
 .pics:hover{
     opacity: .5;
     transition:.5s;
