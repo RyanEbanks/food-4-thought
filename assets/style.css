@@ -76,3 +76,39 @@
 .center-text {
     text-align: center;
 }
+
+
+#contents{
+    width: 100%;
+    height: 400px;
+    background: url(../lowerpictures/macaroons.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    /*margin: 100px auto;*/
+    animation: slide 20s infinite;
+    
+}
+
+@keyframes slide{
+    25%{
+        background: url(../lowerpictures/penne-alla-vodka.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50%{
+        background: url(../lowerpictures/Salmon-entre.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    75%{
+        background: url(../lowerpictures/Steak-entree.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    100%{
+        background: url(../lowerpictures/tres_leche.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

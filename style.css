@@ -16,18 +16,27 @@ h1 {
     border-style: ridge;
 }
 
-
-.pics{
+.lower-pics{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    width:  100px;
-    height: 200px;
     object-fit: cover;
+    justify-content: space-between;
+}
 
+.pics img{
+
+    width: 285px;
+    height: 280px;
 }
 
 .pics:hover{
     opacity: .5;
     transition:.5s;
+}
+
+header{
+    margin: 0;
+    padding: 0;
 
 }
