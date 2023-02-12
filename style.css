@@ -8,3 +8,24 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+
+
+.lower-pics {
+    display: flex;
+    min-width: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7,
+.pic8,
+.pic9{
+    flex: 1;
+    
+}

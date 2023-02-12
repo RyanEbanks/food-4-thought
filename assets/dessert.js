@@ -2,10 +2,12 @@ var formEL = document.querySelector (".pure-form");
 var infoEL = document.querySelector ("#info");
 var showtextEL =document.querySelector (".show");
 var showinfoEL = document.querySelector (".show-info");
-
+console.log("hello")
 var subButton = function(event) {
+    
     event.preventDefault();
-
+    console.log(event)
+    
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
