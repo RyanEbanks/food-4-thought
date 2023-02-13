@@ -2,6 +2,7 @@ var formEL = document.querySelector (".pure-form");
 var infoEL = document.querySelector ("#info");
 var showtextEL =document.querySelector (".show");
 var showinfoEL = document.querySelector (".show-info");
+var choicesEl = document.querySelector(".choices");
 
 
 var subButton = function(event) {
@@ -38,6 +39,7 @@ function displayInfo(search) {
     });
 }
 
+
 //Function to loop through the recipe array and display the individual stuff
 function displayTxt(txt) {
     var foodContainerHtml = "";
@@ -47,8 +49,6 @@ function displayTxt(txt) {
     <div class="food-container food-${i}">
     <img src= "${txt[i].recipe.image}">
     <p>${txt[i].recipe.label}</p>
-    <p>Description<p>
-    <p>Description Text<p>
     <p>Calories: ${txt[i].recipe.calories} Kcal</p>
     `
     foodContainerHtml +=`
