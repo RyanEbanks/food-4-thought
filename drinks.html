@@ -57,26 +57,35 @@
             <button type="submit" class="pure-button pure-button-primary">Enter</button>
         </fieldset>
     </form>
-    <div>
+
+    <div class = "feature-info">
         <div>
-            <p> Featured Drink</p>
+            <p class ="heading"> Featured Drink</p>
         </div>
-        <div> 
-            <img class= "featured-drink" src = "../lowerpictures/Pina_Colada" alt = "Pina colada">
+        <div id = "featured-drink"> 
+            <img class= "fd-pic" src = "./lowerpictures/Pina_Colada" alt = "Pina colada">
         </div>
         <div>
-            <p> Ingredients: </p>
-            <div>
-                <ul>
-                    <ol>2 ounces light rum</ol>
-                    <ol>1 1/2 ounces cream of coconut</ol>
-                    <ol>1 1/2 ounces pineapple juice</ol>
-                    <ol>1/2 ounce lime juice, freshly squeezed</ol>
-                    <ol>Garnish: pineapple wedge</ol>
-                    <ol>Garnish: pineapple leaf</ol></p>
-                </ul>
-            </div>
+            <p class ="subheading"> Ingredients: </p>
+                <ol>
+                    <li>2 ounces light rum</li>
+                    <li>1 1/2 ounces cream of coconut</li>
+                    <li>1 1/2 ounces pineapple juice</li>
+                    <li>1/2 ounce lime juice, freshly squeezed</li>
+                    <li>Garnish: pineapple wedge</li>
+                    <li>Garnish: pineapple leaf</li>
+                </ol>
         </div>
+        <div>
+            <p class ="subheading"> Directions: </p>
+                <ol>
+                    <li>Add the rum, cream of coconut and pineapple and lime juices
+                    </br> to a shaker with ice and shake vigorously for 20 to 30 seconds.</li>
+                    <li>Strain into a chilled Hurricane glass over pebble ice.</li>
+                    <li>Garnish with a pineapple wedge and pineapple leaf.</li>
+                </ol>
+        </div>
+        
     </div>
     
     <div class = "slide">
@@ -91,13 +100,14 @@
 
 
     </div>
-    <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <p class="grey-text text-lighten-4"><span id="edamam-badge" data-color="transparent"></span></p>
-            </div>
-      </footer>
+    
     <script src="./assets/drinks.js"></script>
 </body>
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4"><span id="edamam-badge" data-color="transparent"></span></p>
+        </div>
+  </footer>
 </html>
