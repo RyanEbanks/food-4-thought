@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    align-self: center;
+};
+
+
+.pure-menu-link{
+    display: flex;
+    justify-content: space-between;
+}
