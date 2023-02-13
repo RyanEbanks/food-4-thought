@@ -76,3 +76,24 @@
 .center-text {
     text-align: center;
 }
+
+.welcomeMessage {
+    text-align: center;
+    align-self: center;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    background-color: none;
+    justify-content: center;
+    justify-items: center;
+    
+  }
+  
+  .flex-container > div {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
