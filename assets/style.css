@@ -1,7 +1,7 @@
 /*This is placeholder for the css*/
 
 .nav-container {
-    background-color: tan;
+    background-color: #DEDBD8;
     /* border: solid 1px; */
 }
 
@@ -10,7 +10,7 @@
 }
 
 .pure-form {
-    background-color: pink;
+    background-color: #DEDBD8;
     text-align: center;
 }
 
@@ -78,14 +78,35 @@
     text-align: center;
 }
 
-.picture {
-    width: 520px;
-    height: 450px;
-    background-color: tan;
-    margin: 10px;
-}
 
 .cake {
-    background-color: tan;
+    font-size: 100px;
+    text-align: center;
+    color: #885A89;
+    font-family: cursive;
+}
+.pie {
+    margin: auto;
+}
+.chop {
+    background-color: #D8FFDD;
+}
+.back {
+    background-color: #D8FFDD;
+}
+
+.soup {
+    margin: auto;
+    color: black
+}
+
+.cook {
+    font-size: 150px;
+    text-align: center;
+    color: white;
+}
+
+.pure-menu-link {
+    color: black;
 }
 
