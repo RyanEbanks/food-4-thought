@@ -14,7 +14,7 @@ body {
 
 .pure-form {
     border-top: 1px solid #444;
-    margin-top: 6%;
+    margin-top: 2%;
     padding-top: 30px;
     text-align: center;
 }
@@ -209,11 +209,11 @@ li:hover {
     background: #f36e21;
 }
 
-.btn-large:hover, .search-btn:hover {
+.btn-large:hover, .search-btn:hover, .favorite-tab:hover, .my-fav-text:hover  {
     background: #fbb034;
 }
 
-.btn-large:hover::after {
+.btn-large:hover::after, .favorite-tab::after, .my-fav-text::after {
     background: #f36e21;
 }
 
@@ -225,13 +225,23 @@ li:hover {
     right: 20px;
 }
 
-.mylogo {
-    position: absolute;
+.mylogo, .mylogo2 {
+    position: relative;
     top: 0;
     z-index: 3;
     height: 100px;
     width: 150px;
     left: 20px;
+}
+
+.mylogo {
+    height: 100px;
+    width: 150px;
+}
+
+.mylogo2 {
+    height: 90px;
+    width: 140px;
 }
 
 .choices-header {
@@ -298,6 +308,7 @@ li:hover {
 
 .my-heart:active, .favorite-tab:hover {
     color: red;
+    text-shadow: 4px 4px 4px #0e243126;
 }
 
 .favorite-tab, .favorite-select-tab {
@@ -309,15 +320,27 @@ li:hover {
     border-radius: 15px;
 }
 
-.favorite-tab {
-    border: 1px solid black;
+.my-fav-text {
+    width: 200px;
+    border-radius: 15px;
+    border: none;
     box-shadow: 0 9px #0e243126;
-}
-.favorite-select-tab {
-    box-shadow: 0 5px #0e243126;
+    background: #f36e21;
+    color: white;
 }
 
-.favorite-tab:active {
+.my-fav-text:hover {
+    color: black;
+}
+
+.favorite-tab {
+    border: none;
+    box-shadow: 0 9px #0e243126;
+    background: #f36e21;
+    color: white;
+}
+
+.favorite-tab:active, .my-fav-text:active{
     transform: translateY(4px);
     box-shadow: 0 5px 0 0 #0e243126;
 }
@@ -440,7 +463,8 @@ body{
         background-repeat: no-repeat;
         background-size: contain;
     }
-    
+  
+
     62.5%{
         background: url(../lowerpictures/pina_colada);
         background-repeat: no-repeat;
