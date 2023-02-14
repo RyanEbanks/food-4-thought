@@ -379,22 +379,13 @@ li:hover {
     font-size: 35px;
     font-weight: 100%;
     list-style-position: outside;
-
+    padding-left: 2%;
 }
 
 .feature-items{
     text-align: center;
 }
 
-.fd-pic{
-    width: 25%;
-    height: 25%;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 .list-bullets{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -425,22 +416,17 @@ li:hover {
     text-align: center;
 }
 
-/* .feature-info{
-    border-color: 0.2rem solid black;
-} */
-
 .fd-pic{
     border: black;
     border-style: solid;
-    
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.lower-pics-container{
-    width: 330px;
-    height: 360px;
-    position: relative;
-    bottom: 0px;
-    justify-content: space-between;
-}
+
 #contents{
     padding: 40%;
     width: 80px;
