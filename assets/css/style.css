@@ -506,3 +506,33 @@ li:hover {
         background-size: contain;
     }
 }
+
+@media screen and (min-width: 768px) {
+  /* For mobile phones: */
+  .pics{
+    font-size: auto;
+    line-height: 50px;
+}
+.flex-container {
+    display: flex;
+    background-color: none;
+    justify-content: center;
+    justify-items: center;
+  }
+.welcome-info h2, .fav-restaurants-menu h3{
+    font-size: 2rem;
+}
+.center-text {
+    text-align: auto;
+}
+.favorite-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.lower-pics {
+    flex-direction: column;
+    text-align:  center;
+  }    
+}
