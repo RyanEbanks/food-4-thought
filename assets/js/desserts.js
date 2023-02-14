@@ -5,10 +5,12 @@ var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
 var favoriteEl = document.querySelector(".favorite-tab");
 var favSelectEl = document.querySelector(".my-fav-text");
+
+
 var featureDesserts = document.getElementById("feature-info");
 var subButton = function(event) {
     event.preventDefault();
-    
+
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
@@ -16,25 +18,23 @@ var subButton = function(event) {
     } else {
         showinfoEL.innerHTML = "Nothing was Found";
     }
-    
+
     favoriteEl.addEventListener('click', function() {
         localStorage.setItem("FavDessert", JSON.stringify(infoInput));
     });
 }
 
 favSelectEl.addEventListener('click', function(favInfo) {
-    var myStorageData3 = JSON.parse(localStorage.getItem("FavDessert"));
-        if(myStorageData3){
-            infoEL.value = myStorageData3;
+    var myStorageData = JSON.parse(localStorage.getItem("FavDessert"));
+        if(myStorageData){
+            infoEL.value = myStorageData;
             subButton(favInfo);
         }
 });
 
 
-
-
 function displayInfo(search) {
-    var dessertsUrl = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Desserts&dishType=Sweets"
+    var dessertsUrl = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Biscuits%20and%20cookies&dishType=Desserts&dishType=Sweets"
     
     console.log(dessertsUrl);
     fetch(dessertsUrl) 
@@ -90,7 +90,9 @@ function displayTxt(txt) {
     var html = foodContainerHtml;
     showinfoEL.innerHTML = html;
  }
+
 }
 
 
 formEL.addEventListener('submit', subButton);
+
