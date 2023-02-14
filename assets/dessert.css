@@ -7,8 +7,8 @@
 .cake {
     font-size: 100px;
     text-align: center;
-    color: #BDD5EA;
-    text-shadow: 4px 4px grey;
+    color:rgb(82, 58, 58);
+    text-shadow: 4px 4px rgb(132, 103, 103);
 }
 .pie {
     margin: auto;
