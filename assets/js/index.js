@@ -34,3 +34,14 @@ var heroEl = document.querySelector(".hero-banner");
 //     heroEl.innerHTML = tag;
 // }
 
+const startButton =document.getElementById('submit')
+
+startButton.addEventListener('click', startGame)
+
+function startQuiz(){
+    console.log('Started')
+    startButton.classlist.add('hide')
+    questionContainterElement.classlist.remove('hide')
+    setNextQuestion
+
+}
