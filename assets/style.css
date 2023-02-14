@@ -1,7 +1,12 @@
 /*This is placeholder for the css*/
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+}
 
-.nav-container {
-    border: solid 1px;
+body {
+    background: #f1f2f2;
 }
 
 .list-align {
@@ -9,13 +14,19 @@
 }
 
 .pure-form {
-    margin-top: 30px;
+    border-top: 1px solid #444;
+    margin-top: 6%;
+    padding-top: 30px;
     text-align: center;
 }
 
-.display-border {
-    padding: 10px 5px 10px 5px;
-    border: solid 1px;
+.search-page {
+    color: black;
+}
+
+.search-page:hover {
+    background-color: black;
+    color: white;
 }
 
 .show-info {
@@ -23,12 +34,12 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   margin: 20% auto 20% auto;
+   margin: 10% auto 10% auto;
    padding: 2px 0 2px 0;
 }
 
 .food-container{
-    border-radius: 15px;
+    /* border-radius: 15px;
     padding-right: 2px;
     background-color: #EFBE7D;
     border-color: #EFBE7D;
@@ -38,7 +49,19 @@
     padding: 0;
     box-shadow: 0 14px 25px #0e243126;
     position: relative;
-    height: 800px;
+    height: 800px; */
+
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 5%;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 4px 25px #0e243126;
+    background: #EFBE7D;
+    border-color: #EFBE7D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }  
 
 .food-container img{
@@ -46,10 +69,12 @@
     position: relative;
     bottom: 100px;
     border-radius: 50%;
-    border: solid 8px #ffff;
+    border: solid 8px #f1f2f2;
     text-align: center;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -60,21 +85,232 @@
     padding: 5px 2px 0 2px;
     background-color: #FFD59E;
     border-color: #FFD59E;
-    height: 45%;
     overflow: auto;
-    /*Setting the second div to sit at the bottom of the containing div*/
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 300px;
+    width: 300px;
     margin-left: auto;
-    height: 40%;
     margin-right: auto;
-    text-align: left;
+    text-align: left; 
+    position: relative; 
+    box-shadow: 0 4px 25px #0e243126
+    /*  
+    height: 45%;
+    Setting the second div to sit at the bottom of the containing div*/
+
 } 
 
 .center-text {
     text-align: center;
+}
+
+
+.my-paragraph, .restaurant-links{
+    font-size: 1.25rem;
+}
+.page-footer {
+    border-top: 1px solid #444;
+    background: #f1f2f2;
+}
+
+/*My CSS added for homepage/normal page testing*/
+.home-page {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.home-page:hover {
+    background-color: white;
+    color: black;
+}
+
+/*temporary background*/
+.banner{
+    height: 30%;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+.dim-background {
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.welcome-info {
+    margin-top: 5%;
+    text-shadow: 1px 1px 2px #0e243126;
+}
+
+.favorite-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-items: center;
+}
+
+.fav-outer-container {
+    flex: 1;
+    border: solid yellow;
+}
+
+.container-info {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 4px 25px #0e243126;
+    background: white;
+}
+
+.material-symbols-outlined.md-100 {
+    display: flex;
+    justify-content: center;
+   font-size: 200px;
+   text-align: center;
+   color: #444;
+}
+
+.my-button {
+    padding-bottom: 10%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container {
+    margin-top: 1%;
+    padding-right: 2%;
+}
+
+.btn-large {
+    margin-top: 5%;
+    border-radius: 50px;
+    background: #f36e21;
+}
+
+.search-btn {
+    border-radius: 50px;
+    background: #f36e21;
+}
+
+.btn-large:hover, .search-btn:hover {
+    background: #fbb034;
+}
+
+.btn-large:hover::after {
+    background: #f36e21;
+}
+
+
+.list-align {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    right: 20px;
+}
+
+.mylogo {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100px;
+    width: 150px;
+    left: 20px;
+}
+
+.choices-header {
+    padding-left: 2%;
+}
+
+.pure-menu-list {
+    margin-top: 10%;
+}
+
+.fav-restaurants-menu {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10% auto 10% auto;
+    height: 600px;
+    width: 300px;
+    box-shadow: 0 4px 25px #0e243126;
+    background: white;
+    /* float: right; */
+}
+
+.restaurant-container {
+    border: solid green;
+}
+
+.article-aside-container {
+    position: relative;
+    top: 310px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border: solid 1px blue;
+}
+
+.info-container {
+    border: solid purple;
+}
+
+.home-page-position {
+    position: relative;
+    top: 310px;
+}
+
+.my-row-1 {
+    border: solid orangered;
+    flex: 80%
+}
+
+.my-row-2 {
+    border: solid brown;
+    flex: 20%;
+}
+
+/*Click the heart*/
+
+.my-heart {
+    flex: 30%;
+    margin: auto;
+}
+
+.my-heart-text {
+    flex: 70%;
+}
+
+.my-heart:active, .favorite-tab:hover {
+    color: red;
+}
+
+.favorite-tab {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    height: auto;
+    width: 200px;
+    margin: 2%;
+    border-radius: 15px;
+    box-shadow: 0 9px #0e243126;
+}
+
+.favorite-tab:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #0e243126;
 }
 
 .welcomeMessage {
@@ -97,3 +333,5 @@
     padding: 20px;
     font-size: 30px;
   }
+
+  /*Adding a comment so that I am able to push and merge to the repo*/

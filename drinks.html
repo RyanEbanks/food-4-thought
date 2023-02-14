@@ -11,8 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--API logo-->
     <script src="https://developer.edamam.com/attribution/badge.js"></script>
-    <!--Links to-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Food-4-Thought</title>
 </head>
@@ -31,9 +35,22 @@
         <div class="list-align" style="padding-right: 50px; padding-top: 35px; padding-left: 50px;">
         <ul class="pure-menu-list ">
     <!--Sample Navbar-->
-    <div class="pure-menu pure-menu-horizontal nav-container">
-        <a href="#" class="pure-menu-heading pure-menu-link">Logo</a>
+   <div class="pure-menu pure-menu-horizontal nav-container">
+        <img src="./assets/images/Website Food4Thought logo.png" class="pure-menu-heading mylogo">
         <div class="list-align">
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="./index.html" class="pure-menu-link search-page">Home</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link search-page">Entrees</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link search-page">Desserts</a>
+                </li>
+            </ul>
+
         <ul class="pure-menu-list">
             <li class="pure-menu-item">
                 <a href="#" class="pure-menu-link">Drinks</a>
@@ -46,28 +63,38 @@
             </li>
         </ul>
         <p class="welcMessage">Welcome to Food-4-Thought!</p>
+
         </div>
     </div>
 
     <!--Sample form-->
     <form class="pure-form">
-        <label class="center-text">Search</label>
+        <label class="center-text my-paragraph welcome-info">Find Your Recipe</label>
         <fieldset>
-            <input id ="info" class="material-icons" type="search" placeholder="search" />
-            <button type="submit" class="pure-button pure-button-primary">Enter</button>
+           <input id ="info" type="search" placeholder="search" />
+            <button type="submit" class="pure-button pure-button-primary search-btn">Enter</button>
         </fieldset>
     </form>
 
+    <article class="favorite-tab">
+        <span class="material-symbols-rounded my-heart center-text">
+            favorite
+            </span>
+            <p class="my-heart-text">Add to favorites</p>
+            <article class="dropdown">
+            </article>
+    </article>
+
+    <div class="suggestions">
+        <h2 class="choices-header">Take a look at these choices!</h2>
+        <div class="choices"></div>
+    </div>
+
     <!--Sample Input field-->
     <div class="show">
-        <h2>Append Here:</h2>
-        <div class="display-border">
-            <div class="show-info"></div>
-        </div>
-
-       
-
+      <div class="show-info"></div>
     </div>
+    
     <footer class="page-footer">
         <div class="container">
           <div class="row">
