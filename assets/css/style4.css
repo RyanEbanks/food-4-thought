@@ -481,3 +481,59 @@ ol{
         background-size: contain;
     }
 }
+
+@media screen and (min-width: 768px)
+  /* For mobile phones: */
+{
+    .pics{
+        font-size: auto;
+        line-height: 50px;
+    }
+    .welcomeMessage {
+        text-align: auto;
+        align-self: center;
+        position: relative;
+    }
+    .flex-container {
+        display: flex;
+        background-color: none;
+        justify-content: center;
+        justify-items: center;
+        
+      }
+   
+    .fav-restaurants-menu {
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10% auto 10% auto;
+        height: 20%;
+        width: auto;
+        box-shadow: 0 4px 25px #0e243126;
+        background: white;
+        /* float: right; */
+    }
+    .mylogo {
+        height: 560px;
+        width: 360px;
+    }
+    
+    .mylogo2 {
+        height: 590px;
+        width: 350px;
+    }
+    .mylogo, .mylogo2 {
+        position: relative;
+        top: 0;
+        z-index: 3;
+        height: 250px;
+        width: 160;
+        left: 20px;
+    }
+    .center-text {
+        text-align: auto;
+    }    
+
+
+
+    
+}
