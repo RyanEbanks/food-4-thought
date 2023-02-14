@@ -89,8 +89,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: left; 
@@ -297,20 +297,26 @@ body {
     color: red;
 }
 
-.favorite-tab {
+.favorite-tab, .favorite-select-tab {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     height: auto;
     width: 200px;
     margin: 2%;
     border-radius: 15px;
+}
+
+.favorite-tab {
+    border: 1px solid black;
     box-shadow: 0 9px #0e243126;
+}
+.favorite-select-tab {
+    box-shadow: 0 5px #0e243126;
 }
 
 .favorite-tab:active {
     transform: translateY(4px);
-    box-shadow: 0 5px #0e243126;
+    box-shadow: 0 5px 0 0 #0e243126;
 }
 
 .welcomeMessage {
@@ -327,11 +333,16 @@ body {
     
   }
   
-  .flex-container > div {
+.flex-container > div {
     background-color: blue;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
   }
 
-  /*Adding a comment so that I am able to push and merge to the repo*/
+.favorite-flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*CSS Changes*/

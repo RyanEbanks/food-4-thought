@@ -21,24 +21,10 @@
     <title>Food-4-Thought</title>
 </head>
 <body>
-    
-        <!-- <h1 align="center" style="background-color:">Welcome to Food-4-Thought!</h1> -->
-
-    <!--Navbar-->
-    <div class="pure-menu pure-menu-horizontal nav-container margin" style="border: none; padding-left: 25px;">
-        <img 
-        id="logo"
-        src="./pictures/templogo.png" 
-        width="" height="150"/>
-
-        <a href="" class="pure-menu-heading pure-menu-link"></a>
-        <div class="list-align" style="padding-right: 50px; padding-top: 35px; padding-left: 50px;">
-        <ul class="pure-menu-list ">
     <!--Sample Navbar-->
    <div class="pure-menu pure-menu-horizontal nav-container">
         <img src="./assets/images/Website Food4Thought logo.png" class="pure-menu-heading mylogo">
         <div class="list-align">
-
             <ul class="pure-menu-list">
                 <li class="pure-menu-item">
                     <a href="./index.html" class="pure-menu-link search-page">Home</a>
@@ -50,20 +36,6 @@
                     <a href="#" class="pure-menu-link search-page">Desserts</a>
                 </li>
             </ul>
-
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Drinks</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Entrees</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Desserts</a>
-            </li>
-        </ul>
-        <p class="welcMessage">Welcome to Food-4-Thought!</p>
-
         </div>
     </div>
 
@@ -76,14 +48,18 @@
         </fieldset>
     </form>
 
+    <div class="favorite-flex-container">
     <article class="favorite-tab">
         <span class="material-symbols-rounded my-heart center-text">
             favorite
             </span>
             <p class="my-heart-text">Add to favorites</p>
-            <article class="dropdown">
-            </article>
     </article>
+
+    <article class="favorite-select-tab center-text">
+            <button class="my-fav-text">Select Favorite</button>
+    </article>
+    </div>
 
     <div class="suggestions">
         <h2 class="choices-header">Take a look at these choices!</h2>
@@ -92,7 +68,7 @@
 
     <!--Sample Input field-->
     <div class="show">
-      <div class="show-info"></div>
+        <div class="show-info"></div>
     </div>
     
     <footer class="page-footer">
