@@ -1,0 +1,189 @@
+/*This is placeholder for the css*/
+
+.nav-container {
+    border: solid 1px;
+}
+
+.list-align {
+    float: right;
+}
+
+.pure-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.display-border {
+    padding: 10px 5px 10px 5px;
+    border: solid 1px;
+}
+
+.show-info {
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 20% auto 20% auto;
+   padding: 2px 0 2px 0;
+}
+
+.food-container{
+    border-radius: 15px;
+    padding-right: 2px;
+    background-color: #EFBE7D;
+    border-color: #EFBE7D;
+    text-align: center;
+    margin: 10% auto 10% auto;
+    width: 40%;
+    padding: 0;
+    box-shadow: 0 14px 25px #0e243126;
+    position: relative;
+    height: 800px;
+}  
+
+.food-container img{
+    /* Moving the position of the image upwards */
+    position: relative;
+    bottom: 100px;
+    border-radius: 50%;
+    border: solid 8px #ffff;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+.ingredients-and-steps {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px 2px 0 2px;
+    background-color: #FFD59E;
+    border-color: #FFD59E;
+    height: 45%;
+    overflow: auto;
+    /*Setting the second div to sit at the bottom of the containing div*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    height: 40%;
+    margin-right: auto;
+    text-align: left;
+} 
+
+.heading{
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: 200;
+    
+}
+.subheading{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 100%;
+
+}
+ol{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 75%;
+
+}
+.lower-pics{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.pics img{
+    width: 280px;
+    height: 280px;
+}
+
+.pics:hover{
+    opacity: .5;
+    transition:.5s;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.feature-info{
+    border-color: black;
+}
+
+
+.lower-pics-container{
+    border-color: black;
+    border-style: solid;
+    border-width: 15px;
+    position: relative;
+    bottom: 0px;
+}
+#contents{
+    padding: 40%;
+    width: 80px;
+    height: 40px;
+    animation: cycle ease-in-out 30s infinite;
+    min-width: 200px;
+    max-width: 900px;
+    position: relative;
+    
+}
+body{
+    border-style:double;
+}
+@keyframes cycle    {
+   0% {
+    background: url(../lowerpictures/tres-leche);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+   
+    12.5% {
+        background: url(../lowerpictures/penne-alla-vodka);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    25% {
+        background: url(../lowerpictures/Salmon-entree);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    37.5%{
+        background: url(../lowerpictures/purple\ drink);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50%{
+        background: url(../lowerpictures/brownie);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    62.5%{
+        background: url(../lowerpictures/pina_colada);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    75%{
+        background: url(../lowerpictures/strawberry-shortcake);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    87.5%{
+        background: url(../lowerpictures/ribs-entree);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+   100%{
+        background: url(../lowerpictures/steak-entree);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
