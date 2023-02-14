@@ -3,19 +3,20 @@ var infoEL = document.querySelector ("#info");
 var showtextEL =document.querySelector (".show");
 var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
-
+​
+​
 var subButton = function(event) {
     event.preventDefault();
-
+​
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
     } else {
-        showinfoEL.innerHTML = "Nothing was Found"
+        showinfoEL.innerHTML = "Nothing was Found";
     }
-
+​
 }
-
+​
 function displayInfo(search) {
     var dessertsUrl = "https://api.edamam.com/api/recipes/v2?type=public&q=" +search+ "&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Biscuits%20and%20cookies&dishType=Desserts&dishType=Sweets"
     
@@ -37,7 +38,8 @@ function displayInfo(search) {
         }
     });
 }
-
+​
+​
 //Function to loop through the recipe array and display the individual stuff
 function displayTxt(txt) {
     var foodContainerHtml = "";
@@ -73,5 +75,6 @@ function displayTxt(txt) {
     showinfoEL.innerHTML = html;
  }
 }
-
+​
+​
 formEL.addEventListener('submit', subButton);

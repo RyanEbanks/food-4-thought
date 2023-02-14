@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <!-- GOOGLE FONT -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/dessert.css">
 
     <title>Food-4-Thought</title>
@@ -33,17 +33,17 @@
 <body>
     <!--Sample Navbar-->
     <div class="pure-menu pure-menu-horizontal nav-container">
-        <img src="assets/images/Website-Food4Thought-logo-white.png" class="pure-menu-heading mylogo">
+        <a href ="./index.html"><img src="./assets/images/Website-Food4Thought-logo.png" class="pure-menu-heading mylogo2" alt="Logo"></a>
         <div class="list-align">
         <ul class="pure-menu-list">
             <li class="pure-menu-item">
                 <a href="./index.html" class="pure-menu-link search-page">Home</a>
             </li>
             <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link search-page">Drinks</a>
+                <a href="./drinks.html" class="pure-menu-link search-page">Drinks</a>
             </li>
             <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link search-page">Entrees</a>
+                <a href="./entrees.html" class="pure-menu-link search-page">Entrees</a>
             </li>
         </ul>
         </div>
@@ -62,20 +62,24 @@
 </section>
 
 <!-- ryans -->
-<article class="favorite-tab">
-    <span class="material-symbols-rounded my-heart center-text">
-        favorite
-        </span>
-        <p class="my-heart-text">Add to favorites</p>
-        <article class="dropdown">
-        </article>
-</article>
-​
+<div class="favorite-flex-container">
+    <article class="favorite-tab">
+        <span class="material-symbols-rounded my-heart center-text">
+            favorite
+            </span>
+            <p class="my-heart-text">Add to favorites</p>
+    </article>
+
+    <article class="favorite-select-tab center-text">
+            <button class="my-fav-text">Select Favorite</button>
+    </article>
+    </div>
+
 <div class="suggestions">
     <h2 class="choices-header">Take a look at these choices!</h2>
     <div class="choices"></div>
 </div>
-​ 
+
 
 <div class="show">
     <div class="show-info"></div>
