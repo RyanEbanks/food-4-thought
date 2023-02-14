@@ -1,0 +1,28 @@
+.cake {
+    font-size: 100px;
+    text-align: center;
+    color: #885A89;
+    font-family: cursive;
+}
+.pie {
+    margin: auto;
+}
+
+.back {
+    background-color: #D8FFDD;
+}
+
+.soup {
+    margin: auto;
+    color: black
+}
+
+.cook {
+    font-size: 150px;
+    text-align: center;
+    color: white;
+}
+
+.pure-menu-link {
+    color: black;
+}
