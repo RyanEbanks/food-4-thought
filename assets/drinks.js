@@ -14,9 +14,12 @@ var subButton = function(event) {
     if(infoInput) {
         displayInfo(infoInput);
     } else {
-        showinfoEL.innerHTML = "Nothing was Found"
+        showinfoEL.innerHTML = "Nothing was Found";
     }
     
+    favoriteEl.addEventListener('click', function() {
+        localStorage.setItem("FavDrink", JSON.stringify(infoInput));
+    });
 }
 
 favSelectEl.addEventListener('click', function(favInfo) {
@@ -27,9 +30,6 @@ favSelectEl.addEventListener('click', function(favInfo) {
         }
 });
 
-favoriteEl.addEventListener('click', function() {
-    localStorage.setItem("FavDrink", JSON.stringify(infoInput));
-});
 
 function displayInfo(search) {
     var drinksUrl = "https://api.edamam.com/api/recipes/v2?type=any&q=" + search + "&app_id=a29e6f3f&app_key=7047bda6c7dbcd72b85643ed79100572&dishType=Drinks";

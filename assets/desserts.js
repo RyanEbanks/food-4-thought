@@ -3,20 +3,35 @@ var infoEL = document.querySelector ("#info");
 var showtextEL =document.querySelector (".show");
 var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
-​
-​
+var favoriteEl = document.querySelector(".favorite-tab");
+var favSelectEl = document.querySelector(".my-fav-text");
+
 var subButton = function(event) {
     event.preventDefault();
-​
+    
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
     } else {
-        showinfoEL.innerHTML = "Nothing was Found"
+        showinfoEL.innerHTML = "Nothing was Found";
     }
-​
+    
+    favoriteEl.addEventListener('click', function() {
+        localStorage.setItem("FavDessert", JSON.stringify(infoInput));
+    });
 }
-​
+
+favSelectEl.addEventListener('click', function(favInfo) {
+    var myStorageData3 = JSON.parse(localStorage.getItem("FavDessert"));
+        if(myStorageData3){
+            infoEL.value = myStorageData3;
+            subButton(favInfo);
+        }
+});
+
+
+
+
 function displayInfo(search) {
     var dessertsUrl = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Desserts&dishType=Sweets"
     
@@ -30,7 +45,7 @@ function displayInfo(search) {
                     showinfoEL.innerHTML = "Nothing was Found";
                     return;
                 }
-​
+
                 displayTxt(data.hits);
                 console.log(data.hits);
                 console.log("General Data" + data);
@@ -38,8 +53,8 @@ function displayInfo(search) {
         }
     });
 }
-​
-​
+
+
 //Function to loop through the recipe array and display the individual stuff
 function displayTxt(txt) {
     var foodContainerHtml = "";
@@ -56,7 +71,7 @@ function displayTxt(txt) {
     <p class="center-text">Ingredients:<p>
     <ul>
     `
-​
+
     //Referencing the index of the ingredients themself
         for(var j = 0; j < txt[i].recipe.ingredientLines.length; j++) {
             foodContainerHtml += `
@@ -75,6 +90,6 @@ function displayTxt(txt) {
     showinfoEL.innerHTML = html;
  }
 }
-​
-​
+
+
 formEL.addEventListener('submit', subButton);
