@@ -348,4 +348,117 @@ li:hover {
     flex-direction: row;
   }
 
-  
+  .heading{
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: 200;
+    
+}
+.subheading{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 100%;
+
+}
+ol{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 75%;
+
+}
+.lower-pics{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.pics img{
+    width: 280px;
+    height: 280px;
+}
+
+.pics:hover{
+    opacity: .5;
+    transition:.5s;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.feature-info{
+    border-color: black;
+}
+
+
+.lower-pics-container{
+    border-color: black;
+    border-style: solid;
+    border-width: 15px;
+    position: relative;
+    bottom: 0px;
+}
+#contents{
+    padding: 40%;
+    width: 80px;
+    height: 40px;
+    animation: cycle ease-in-out 30s infinite;
+    min-width: 200px;
+    max-width: 900px;
+    position: relative;
+    
+}
+body{
+    border-style:double;
+}
+@keyframes cycle    {
+   0% {
+    background: url(../lowerpictures/tres-leche);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+   
+    12.5% {
+        background: url(../lowerpictures/penne-alla-vodka);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    25% {
+        background: url(../lowerpictures/Salmon-entree);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    37.5%{
+        background: url(../lowerpictures/purple\ drink);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50%{
+        background: url(../lowerpictures/brownie);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    62.5%{
+        background: url(../lowerpictures/pina_colada);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    75%{
+        background: url(../lowerpictures/strawberry-shortcake);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    87.5%{
+        background: url(../lowerpictures/ribs-entree);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+   100%{
+        background: url(../lowerpictures/steak-entree);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
