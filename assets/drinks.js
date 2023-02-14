@@ -3,17 +3,29 @@ var infoEL = document.querySelector ("#info");
 var showtextEL =document.querySelector (".show");
 var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
+var favoriteEl = document.querySelector(".favorite-tab");
+var favSelectEl = document.querySelector(".my-fav-text");
 
 
 var subButton = function(event) {
     event.preventDefault();
-
+    
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
     } else {
         showinfoEL.innerHTML = "Nothing was Found"
     }
+    
+    favoriteEl.addEventListener('click', function() {
+        localStorage.setItem("FavDrink", infoInput);
+    });
+
+    favSelectEl.addEventListener('click', function() {
+        var myStorageData = localStorage.getItem("FavDrink");
+
+        infoEL.value = myStorageData;
+    });
 
 }
 
@@ -78,3 +90,4 @@ function displayTxt(txt) {
 
 
 formEL.addEventListener('submit', subButton);
+
