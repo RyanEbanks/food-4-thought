@@ -1,0 +1,24 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+}
+
+.soup {
+    font-size: 100px;
+    text-align: center;
+    color: #70161E;
+    text-shadow: 4px 4px lightgrey;
+}
+.pie {
+    margin: auto;
+}
+
+.back {
+    background-color: #D8FFDD;
+}
+
+
+.pure-menu-link {
+    color: black;
+}

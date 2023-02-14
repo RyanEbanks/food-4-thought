@@ -1,9 +1,14 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+}
+
 .cake {
     font-size: 100px;
     text-align: center;
-    color: #BFAB25;
-    text-shadow: #BFAB25;
-    font-family: cursive;
+    color: #BDD5EA;
+    text-shadow: 4px 4px grey;
 }
 .pie {
     margin: auto;
