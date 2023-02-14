@@ -16,7 +16,8 @@ var subButton = function(event) {
 }
 
 function displayInfo(search) {
-    var url = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Desserts&dishType=Sweets"
+    var url = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Main%20course&dishType=Pancake&dishType=Salad&dishType=Sandwiches&dishType=Soup"
+    // var url = "https://api.edamam.com/api/recipes/v2?type=public" +search+ "&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec"
     console.log(url);
     fetch(url) 
     .then(function(response){

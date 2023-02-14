@@ -106,6 +106,7 @@ body {
     text-align: center;
 }
 
+
 .my-paragraph, .restaurant-links{
     font-size: 1.25rem;
 }
@@ -311,3 +312,24 @@ body {
     transform: translateY(4px);
     box-shadow: 0 5px #0e243126;
 }
+
+.welcomeMessage {
+    text-align: center;
+    align-self: center;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    background-color: none;
+    justify-content: center;
+    justify-items: center;
+    
+  }
+  
+  .flex-container > div {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
