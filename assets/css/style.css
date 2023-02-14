@@ -306,6 +306,10 @@ body {
     border-radius: 15px;
 }
 
+.my-fav-text {
+    width: 200px;
+}
+
 .favorite-tab {
     border: 1px solid black;
     box-shadow: 0 9px #0e243126;
@@ -345,4 +349,3 @@ body {
     flex-direction: row;
   }
 
-  /*CSS Changes*/

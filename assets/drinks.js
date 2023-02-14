@@ -18,13 +18,16 @@ var subButton = function(event) {
     }
     
     favoriteEl.addEventListener('click', function() {
-        localStorage.setItem("FavDrink", infoInput);
+        localStorage.setItem("FavDrink", JSON.stringify(infoInput));
     });
 
     favSelectEl.addEventListener('click', function() {
-        var myStorageData = localStorage.getItem("FavDrink");
+        var myStorageData = JSON.parse(localStorage.getItem("FavDrink"));
+        var infoEL = document.getElementById("info");
+        if(myStorageData) {
+            infoEL.value = myStorageData;
+        }
 
-        infoEL.value = myStorageData;
     });
 
 }
@@ -86,6 +89,7 @@ function displayTxt(txt) {
     var html = foodContainerHtml;
     showinfoEL.innerHTML = html;
  }
+
 }
 
 
