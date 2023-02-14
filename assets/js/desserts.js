@@ -5,13 +5,14 @@ var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
 var favoriteEl = document.querySelector(".favorite-tab");
 var favSelectEl = document.querySelector(".my-fav-text");
-
+var featureDesserts = document.getElementById("feature-info");
 var subButton = function(event) {
     event.preventDefault();
     
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
+        featureDesserts.style.display = "none";
     } else {
         showinfoEL.innerHTML = "Nothing was Found";
     }

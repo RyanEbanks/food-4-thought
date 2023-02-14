@@ -5,16 +5,23 @@ var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
 var favoriteEl = document.querySelector(".favorite-tab");
 var favSelectEl = document.querySelector(".my-fav-text");
+var featureEntrees = document.getElementById("feature-info");
+
 
 var subButton = function(event) {
     event.preventDefault();
 
+
     var infoInput = infoEL.value.trim();
     if(infoInput) {
-        displayInfo(infoInput);
+    
+        displayInfo(infoInput)
+        featureEntrees.style.display = "none";   
+       
     } else {
         showinfoEL.innerHTML = "Nothing was Found";
     }
+    
 
     favoriteEl.addEventListener('click', function() {
         localStorage.setItem("FavEntree", JSON.stringify(infoInput));

@@ -372,33 +372,39 @@ li:hover {
   }
 
   .heading{
-    font-family: fantasy;
-    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     font-weight: 200;
+    text-align: center;
     
 }
 .subheading{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 100%;
+    list-style-position: outside;
 
 }
 
-
-.feature-info{
+.feature-items{
     text-align: center;
 }
 
 .fd-pic{
     width: 25%;
     height: 25%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-ol{
+.list-bullets{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    font-weight: 75%;
+    font-size: 15px;
+    font-weight: 15px;
+    list-style-type: lower-alpha;
 
 }
 .lower-pics{
@@ -427,7 +433,11 @@ ol{
     border-color: 0.2rem solid black;
 } */
 
-
+.fd-pic{
+    border: black;
+    border-style: solid;
+    
+}
 .lower-pics-container{
     width: 330px;
     height: 360px;
