@@ -5,7 +5,7 @@ var showinfoEL = document.querySelector (".show-info");
 var choicesEl = document.querySelector(".choices");
 var favoriteEl = document.querySelector(".favorite-tab");
 var favSelectEl = document.querySelector(".my-fav-text");
-
+var featureDrinks = document.getElementById("feature-info");
 
 var subButton = function(event) {
     event.preventDefault();
@@ -13,6 +13,7 @@ var subButton = function(event) {
     var infoInput = infoEL.value.trim();
     if(infoInput) {
         displayInfo(infoInput);
+        featureDrinks.style.display = "none";  
     } else {
         showinfoEL.innerHTML = "Nothing was Found";
     }
