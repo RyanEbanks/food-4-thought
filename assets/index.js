@@ -33,3 +33,4 @@ function generateImages(image){
     console.log(tag);
     heroEl.innerHTML = tag;
 }
+

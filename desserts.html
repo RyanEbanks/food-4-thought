@@ -9,29 +9,41 @@
     integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <!--The viewport tag allows for responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- API LOGO -->
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/dessert.css">
+
     <title>Food-4-Thought</title>
 </head>
-<body>
-    <!--The following HTML is solely prepared to allow the group to work on api calls while
-    the others work on the styling of the page-->
+<style>
+    section {
+        background-image: url(assets\images\blueberries-2278921_1920.jpg);
+        background-size:contain;
+    }
 
+</style>
+
+<body>
     <!--Sample Navbar-->
     <div class="pure-menu pure-menu-horizontal nav-container">
-        <a href="#" class="pure-menu-heading pure-menu-link">Logo</a>
+        <img src="assets/images/Website-Food4Thought-logo-white.png" class="pure-menu-heading mylogo">
         <div class="list-align">
         <ul class="pure-menu-list">
             <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Drinks</a>
+                <a href="./index.html" class="pure-menu-link search-page">Home</a>
             </li>
             <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Meat</a>
+                <a href="#" class="pure-menu-link search-page">Drinks</a>
             </li>
             <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Vegetarian</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Desserts</a>
+                <a href="#" class="pure-menu-link search-page">Entrees</a>
             </li>
         </ul>
         </div>
@@ -40,19 +52,42 @@
     <!--Sample form-->
     <form class="pure-form">
         <fieldset>
-            <legend>Sample Search Field</legend>
             <input id="info" type="search" placeholder="search" />
-            <button type="submit" class="pure-button pure-button-primary">Enter</button>
+            <button type="submit" class="pure-button pure-button-primary search-btn">Enter</button>
         </fieldset>
     </form>
+    
+<section class="cake">
+    <h1 class="pie">Desserts</h1>
+</section>
 
-    <!--DISPLAY TEXT-->
-    <div class="show">
-        <h2>Append Here:</h2>
-        <div class="display-border">
-            <p class="show-info"></p>
-        </div>
-    </div>
-    <script src="assets\dessert.js"></script>
+<!-- ryans -->
+<article class="favorite-tab">
+    <span class="material-symbols-rounded my-heart center-text">
+        favorite
+        </span>
+        <p class="my-heart-text">Add to favorites</p>
+        <article class="dropdown">
+        </article>
+</article>
+​
+<div class="suggestions">
+    <h2 class="choices-header">Take a look at these choices!</h2>
+    <div class="choices"></div>
+</div>
+​ 
+
+<div class="show">
+    <div class="show-info"></div>
+  </div>
+  
+  <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <p class="grey-text text-lighten-4"><span id="edamam-badge" data-color="transparent"></span></p>
+          </div>
+    </footer>
+  <script src="./assets/desserts.js"></script>
 </body>
 </html>
