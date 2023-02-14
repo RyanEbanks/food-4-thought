@@ -91,6 +91,23 @@ ol{
     font-weight: 75%;
 
 }
+.lower-pics{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.pics img{
+    width: 280px;
+    height: 280px;
+}
+
+.pics:hover{
+    opacity: .5;
+    transition:.5s;
+}
 
 .center-text {
     text-align: center;
@@ -107,12 +124,17 @@ ol{
     text-align: center;
 }
 
-
+.test{
+    border-color: black;
+    border-style: solid;
+    border-width: 15px;
+    border-style: ridge;
+}
 #contents{
     padding: 40%;
     width: 80px;
     height: 40px;
-    animation: cycle ease-in-out 30s infinite;
+    animation: cycle slide-in 30s infinite;
     min-width: 200px;
     max-width: 900px;
     
