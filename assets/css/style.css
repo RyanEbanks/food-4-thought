@@ -1,3 +1,4 @@
+/*This is placeholder for the css*/
 *{
     font-family: 'Quicksand', sans-serif;
     font-family: 'Ubuntu', sans-serif;
@@ -38,6 +39,18 @@ body {
 }
 
 .food-container{
+    /* border-radius: 15px;
+    padding-right: 2px;
+    background-color: #EFBE7D;
+    border-color: #EFBE7D;
+    text-align: center;
+    margin: 10% auto 10% auto;
+    width: 40%;
+    padding: 0;
+    box-shadow: 0 14px 25px #0e243126;
+    position: relative;
+    height: 800px; */
+
     border-radius: 15px;
     border: 1px solid black;
     margin: 5%;
@@ -76,8 +89,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: left; 
@@ -97,27 +110,12 @@ body {
 .my-paragraph, .restaurant-links{
     font-size: 1.25rem;
 }
-
-#content {
-    border: 1px solid #DDDDDD;
-    background-color: #F6F6F6;
-    padding-right: 25px;
-}
-  
-li{
-    padding: 17px;
-    list-style: none;
-}
-  
-li:hover {
-    background-color: #DDDDDD;
-}
-
 .page-footer {
     border-top: 1px solid #444;
     background: #f1f2f2;
 }
 
+/*My CSS added for homepage/normal page testing*/
 .home-page {
     color: white;
     font-size: 1.25rem;
@@ -128,6 +126,7 @@ li:hover {
     color: black;
 }
 
+/*temporary background*/
 .banner{
     height: 30%;
     width: 100%;
@@ -163,7 +162,7 @@ li:hover {
 
 .fav-outer-container {
     flex: 1;
-    border: none;
+    border: solid yellow;
 }
 
 .container-info {
@@ -248,10 +247,11 @@ li:hover {
     width: 300px;
     box-shadow: 0 4px 25px #0e243126;
     background: white;
+    /* float: right; */
 }
 
 .restaurant-container {
-    border: none;
+    border: solid green;
 }
 
 .article-aside-container {
@@ -260,11 +260,11 @@ li:hover {
     display: flex;
     flex-direction: row;
     height: 100%;
-    border: none;
+    border: solid 1px blue;
 }
 
 .info-container {
-    border: none;
+    border: solid purple;
 }
 
 .home-page-position {
@@ -273,12 +273,12 @@ li:hover {
 }
 
 .my-row-1 {
-    border: none;
+    border: solid orangered;
     flex: 80%
 }
 
 .my-row-2 {
-    border: none;
+    border: solid brown;
     flex: 20%;
 }
 
@@ -297,20 +297,26 @@ li:hover {
     color: red;
 }
 
-.favorite-tab {
+.favorite-tab, .favorite-select-tab {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     height: auto;
     width: 200px;
     margin: 2%;
     border-radius: 15px;
+}
+
+.favorite-tab {
+    border: 1px solid black;
     box-shadow: 0 9px #0e243126;
+}
+.favorite-select-tab {
+    box-shadow: 0 5px #0e243126;
 }
 
 .favorite-tab:active {
     transform: translateY(4px);
-    box-shadow: 0 5px #0e243126;
+    box-shadow: 0 5px 0 0 #0e243126;
 }
 
 .welcomeMessage {
@@ -327,9 +333,16 @@ li:hover {
     
   }
   
-  .flex-container > div {
+.flex-container > div {
     background-color: blue;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
   }
+
+.favorite-flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*CSS Changes*/
