@@ -1,0 +1,34 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+}
+
+.cake {
+    font-size: 100px;
+    text-align: center;
+    color: rgb(218, 201, 21);
+    text-shadow: 4px 4px grey;
+}
+.pie {
+    margin: auto;
+}
+
+.back {
+    background-color: #D8FFDD;
+}
+
+.soup {
+    margin: auto;
+    color: black
+}
+
+.cook {
+    font-size: 150px;
+    text-align: center;
+    color: white;
+}
+
+.pure-menu-link {
+    color: black;
+}

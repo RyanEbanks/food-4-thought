@@ -6,6 +6,7 @@ var choicesEl = document.querySelector(".choices");
 var favoriteEl = document.querySelector(".favorite-tab");
 var favSelectEl = document.querySelector(".my-fav-text");
 
+
 var subButton = function(event) {
     event.preventDefault();
 
@@ -22,9 +23,9 @@ var subButton = function(event) {
 }
 
 favSelectEl.addEventListener('click', function(favInfo) {
-    var myStorageData2 = JSON.parse(localStorage.getItem("FavEntree"));
-        if(myStorageData2){
-            infoEL.value = myStorageData2;
+    var myStorageData = JSON.parse(localStorage.getItem("FavEntree"));
+        if(myStorageData){
+            infoEL.value = myStorageData;
             subButton(favInfo);
         }
 });
@@ -32,7 +33,7 @@ favSelectEl.addEventListener('click', function(favInfo) {
 
 function displayInfo(search) {
     var entreesUrl = "https://api.edamam.com/api/recipes/v2?type=public&q="+search+"&app_id=730b99e5&app_key=2eacc20905ac41a9a0d49163a5a68fec&dishType=Main%20course&dishType=Pancake&dishType=Salad&dishType=Sandwiches&dishType=Soup"
-      
+    
     console.log(entreesUrl);
     fetch(entreesUrl) 
     .then(function(response){
@@ -87,7 +88,9 @@ function displayTxt(txt) {
     var html = foodContainerHtml;
     showinfoEL.innerHTML = html;
  }
+
 }
 
 
 formEL.addEventListener('submit', subButton);
+
