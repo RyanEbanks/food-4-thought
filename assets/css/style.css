@@ -260,12 +260,8 @@ li:hover {
     width: 300px;
     box-shadow: 0 4px 25px #0e243126;
     background: white;
-    /* float: right; */
 }
 
-.restaurant-container {
-    border: none;
-}
 
 .article-aside-container {
     position: relative;
@@ -383,22 +379,13 @@ li:hover {
     font-size: 35px;
     font-weight: 100%;
     list-style-position: outside;
-
+    padding-left: 2%;
 }
 
 .feature-items{
     text-align: center;
 }
 
-.fd-pic{
-    width: 25%;
-    height: 25%;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 .list-bullets{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -429,22 +416,17 @@ li:hover {
     text-align: center;
 }
 
-/* .feature-info{
-    border-color: 0.2rem solid black;
-} */
-
 .fd-pic{
     border: black;
     border-style: solid;
-    
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.lower-pics-container{
-    width: 330px;
-    height: 360px;
-    position: relative;
-    bottom: 0px;
-    justify-content: space-between;
-}
+
 #contents{
     padding: 40%;
     width: 80px;
@@ -504,5 +486,41 @@ li:hover {
         background: url(../lowerpictures/steak-entree);
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+@media screen and (max-width: 768px)
+  /* For mobile phones: */
+{
+    .pics{
+        font-size: auto;
+        line-height: 50px;
+    }
+  
+    .flex-container {
+        display: flex;
+        background-color: none;
+        justify-content: center;
+        justify-items: center;
+      }
+    .welcome-info h2, .fav-restaurants-menu h3{
+       
+        font-size: 2rem;
+    }
+    
+   
+    .center-text {
+        text-align: auto;
+    }
+
+    .favorite-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .lower-pics {
+        flex-direction: column;
+        text-align:  center;
     }
 }
