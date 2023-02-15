@@ -523,8 +523,4 @@ li:hover {
         flex-direction: column;
         text-align:  center;
     }
-
-    .pie {
-        font-size: 1em;
-    }
 }
